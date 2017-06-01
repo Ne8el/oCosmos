@@ -9,11 +9,79 @@
 	<body>
 		<div id="root">
 			<header id="header">
-
+				<img id="arrow" src="../images/arrow.svg" alt="logo flèche vers le bas">
+				<a id="descendre" href="#bottom">Descendre</a>
+				<img src="../images/logo.svg" alt="logo O'clock">
+				<h1 id="title">Formulaire d'inscription à O'clock</h1>
+				<h2>Pour être vraiment étudiant chez O'clock, il faut savoir réaliser son propre formulaire d'inscription en langage <strong>&lt;html&gt; </strong> !</h2>
 			</header>
-			<form id="form" action="">
 
+			<form id="form" action="/ma-page-de-traitement">
+				<label for="radiomme">Je soussigné(e), Mme</label>
+				<input type="radio" name="radiomme" class="radio">
+				<label for="radiomme">M</label>
+  			<input type="radio" name="radiomme" class="radio">
+				<input type="text" id="nom" />
+				<input type="text" id="prénom" />
+				<div class="birthday">
+					<select name="day" id="day">
+						<option value="01" class="jour">01</option>
+						<option value="02" class="jour">02</option>
+						<option value="03" class="jour">03</option>
+						<option value="04" class="jour">04</option>
+						<option value="05" class="jour">05</option>
+						<option value="06" class="jour">06</option>
+						<option value="07" class="jour">07</option>
+						<option value="08" class="jour">08</option>
+						<option value="09" class="jour">09</option>
+						<option value="10" class="jour">10</option>
+						<option value="11" class="jour">11</option>
+						<option value="12" class="jour">12</option>
+						<option value="13" class="jour">13</option>
+						<option value="14" class="jour">14</option>
+						<option value="15" class="jour">15</option>
+						<option value="16" class="jour">16</option>
+						<option value="17" class="jour">17</option>
+						<option value="18" class="jour">18</option>
+						<option value="19" class="jour">19</option>
+						<option value="20" class="jour">20</option>
+						<option value="21" class="jour">21</option>
+						<option value="22" class="jour">22</option>
+						<option value="23" class="jour">23</option>
+						<option value="24" class="jour">24</option>
+						<option value="25" class="jour">25</option>
+						<option value="26" class="jour">26</option>
+						<option value="27" class="jour">27</option>
+						<option value="28" class="jour">28</option>
+						<option value="29" class="jour">29</option>
+						<option value="30" class="jour">30</option>
+						<option value="31" class="jour">31</option>
+					</select>
+					<select name="month" id="month">
+						<option value="janvier" class="mois">janvier</option>
+						<option value="fevrier" class="mois">février</option>
+						<option value="mars" class="mois">mars</option>
+						<option value="avril" class="mois">avril</option>
+						<option value="mai" class="mois">mai</option>
+						<option value="juin" class="mois">juin</option>
+						<option value="juillet" class="mois">juillet</option>
+						<option value="août" class="mois">août</option>
+						<option value="septembre" class="mois">septembre</option>
+						<option value="octobre" class="mois">octobre</option>
+						<option value="novembre" class="mois">novembre</option>
+						<option value="decembre" class="mois">décembre</option>
+					</select>
+
+				</div>
+				<div>
+				    <label for="message">Message :</label>
+				    <textarea id="message"></textarea>
+				</div>
+				<div class="button">
+        			<button type="submit">Envoyer votre message</button>
+    			</div>
 			</form>
+
 			<p id="bottom">
 				Pour toute réclamation, <a href="">c'est par ici</a>.
 			</p>
